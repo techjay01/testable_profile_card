@@ -1,0 +1,157 @@
+:root {
+  --bg: #f4f6f8;
+  --card: #ffffff;
+  --text: #333333;
+  --muted: #555555;
+  --accent: #2563eb;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  color: var(--text);
+}
+
+/* CARD */
+article[data-testid="test-profile-card"] {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* AVATAR */
+figure {
+  flex-shrink: 0;
+  justify-self: center;
+}
+
+img[data-testid="test-user-avatar"] {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* TEXT CONTENT */
+.profile-info {
+  flex: 1;
+}
+
+h2[data-testid="test-user-name"] {
+  font-size: 1.5rem;
+  margin-bottom: 6px;
+}
+
+p[data-testid="test-user-bio"] {
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+/* TIME */
+time[data-testid="test-user-time"] {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* SECTIONS */
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+section h3 {
+  font-size: 1rem;
+}
+
+/* LISTS */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  background: #eef2ff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+}
+
+/* SOCIAL LINKS */
+nav[data-testid="test-user-social-links"] {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  flex: 1;
+  text-align: center;
+  background: #eef2ff;
+  padding: 6px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+nav a:focus,
+nav a:hover {
+  outline: 2px solid var(--accent);
+  border-radius: 5px;
+}
+
+/* RESPONSIVE */
+@media (min-width: 768px) {
+  article[data-testid="test-profile-card"] {
+    flex-direction: row;
+  }
+
+  .left {
+    flex: 0 0 180px;
+  }
+
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  header {
+    text-align: left;
+  }
+
+  time[data-testid="test-user-time"] {
+    margin-bottom: 0;
+  }
+}

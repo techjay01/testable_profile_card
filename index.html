@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <article data-testid="test-profile-card">
+
+    <!-- LEFT -->
+    <div class="left">
+      <figure>
+        <img 
+          src="picture.jpg" 
+          alt="Portrait of Mbamara Joshua, frontend developer"
+          data-testid="test-user-avatar"
+        />
+      </figure>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right">
+
+      <header>
+        <div class="profile-info">
+          <h2 data-testid="test-user-name">Mbamara Joshua</h2>
+          <p data-testid="test-user-bio">
+            Passionate frontend developer focused on building accessible, responsive, and scalable user interfaces using modern web technologies.
+          </p>
+          <time data-testid="test-user-time" aria-live="polite"></time>
+        </div>
+      </header>
+
+      <!-- SOCIAL LINKS -->
+      <nav data-testid="test-user-social-links" aria-label="Social media links">
+        <a href="https://x.com/techjay01" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a>
+        <a href="https://github.com/techjay01" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a>
+        <a href="https://linkedin.com/in/jaytech.0001" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a>
+      </nav>
+
+      <!-- HOBBIES -->
+      <section>
+        <h3>Hobbies</h3>
+        <ul data-testid="test-user-hobbies">
+          <li>Coding</li>
+          <li>Reading tech blogs</li>
+          <li>UI/UX design</li>
+        </ul>
+      </section>
+
+      <!-- DISLIKES -->
+      <section>
+        <h3>Dislikes</h3>
+        <ul data-testid="test-user-dislikes">
+          <li>Poor UX</li>
+          <li>Slow websites</li>
+          <li>Unstructured code</li>
+        </ul>
+      </section>
+
+    </div>
+
+  </article>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
