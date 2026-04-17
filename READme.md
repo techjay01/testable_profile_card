@@ -5,13 +5,13 @@ This project was completed as part of the Stage 1B Frontend Wizards task.
 
 ---
 
-## 🚀 Live Demo
+## Live Demo
 
-🔗 Live URL: [ADD YOUR LINK HERE]
+🔗 Live URL: [https://joshua-profilecard.netlify.app/]
 
 ---
 
-## 📌 Features
+## Features
 
 - Semantic HTML structure (`article`, `header`, `section`, `nav`, `figure`)
 - Fully responsive design (mobile → desktop)
@@ -23,7 +23,7 @@ This project was completed as part of the Stage 1B Frontend Wizards task.
 
 ---
 
-## 🧱 Tech Stack
+## Tech Stack
 
 - HTML5
 - CSS3 (Flexbox + Media Queries)
@@ -31,18 +31,20 @@ This project was completed as part of the Stage 1B Frontend Wizards task.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
-/profile-card
+```
+profile-card/
 │── index.html
-│── style.css (embedded in HTML)
-│── script.js (embedded in HTML)
+│── style.css 
+│── script.js 
 │── picture.jpg
 │── README.md
+```
 
 ---
 
-## 🧩 Core Components
+## Core Components
 
 | Element | data-testid |
 |--------|-------------|
@@ -57,7 +59,7 @@ This project was completed as part of the Stage 1B Frontend Wizards task.
 
 ---
 
-## ⚙️ How to Run Locally
+## How to Run Locally
 
 ### 1. Clone the repository
 ```bash
@@ -86,39 +88,37 @@ You can use any of the following:
 - Right-click `index.html`  
 - Click **"Open with Live Server"**
 
----
-
-#### 3 Option B: Direct Browser
+#### Option B: Direct Browser
 - Double-click `index.html`  
 - It will open directly in your browser  
 
 ---
 
-## 🧪 Manual Test Checklist
+## Manual Test Checklist
 
-### ✅ Structure
+### Structure
 - Profile card renders correctly  
 - All required `data-testid` attributes exist  
 
-### ♿ Accessibility
+### Accessibility
 - Avatar has meaningful `alt` text  
 - Links are keyboard accessible (Tab navigation works)  
 - Focus state visible on links  
 - Color contrast is readable (WCAG AA)  
 
-### ⚙️ Functionality
+### Functionality
 - Epoch time updates in milliseconds  
 - Social links open in new tab  
 - Layout is responsive (mobile/tablet/desktop)  
 
-### 📱 Responsiveness
+### Responsiveness
 - Mobile: stacked layout  
 - Desktop: side-by-side layout  
 - No overflow or broken layout on resize  
 
 ---
 
-## ⏱ Time Feature
+## Time Feature
 
 The time is generated using:
 
